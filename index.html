@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="generator" content="Mobirise v4.7.10, mobirise.com">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+		<link rel="shortcut icon" href="assets/images/cp-sport-technology-200px-96x96.png" type="image/x-icon">
+		<meta name="description" content="">
+		<title>Home</title>
+		<link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+		<link rel="stylesheet" href="assets/tether/tether.min.css">
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+		<link rel="stylesheet" href="assets/dropdown/css/style.css">
+		<link rel="stylesheet" href="assets/theme/css/style.css">
+		<link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+		<link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+		
+		<style>
+			body, html {
+			height: 100%;
+			margin: 0;
+			}
+			.bg {
+			/* The image used */
+			/*background-image: url("PMC_Speed_Chart_050918_a.png");*/
+			/*background-image: url("assets/images/NMC_D.jpeg");*/
+			/*background-image: url("assets/images/Baseball batter hits the ball.jpg");*/
+			/* Full height */
+			height: 100%; 
+			/* Center and scale the image nicely */
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			}
+        </style>
+        
+		<style type="text/css">
+			#columnRight {
+			position: absolute;
+			right: 0px;
+			width: 15%;
+			float: left;
+			/*background: white;*/
+			padding-bottom: 1em;
+			text-align: justify;
+			}
+			#columnLeft {
+			position: absolute;
+			left: 0%;
+			width: 15%;
+			float:right;
+			/*background: white;*/
+			padding-bottom: 1em;
+			text-align: justify;
+			}
+			#columnMain {
+			width:50%;
+			float:left;
+			/*background: white;*/
+			padding-bottom: 1em;
+			}
+			#footer {
+			clear: both;
+			padding-bottom: 1em;
+			border-top: 1px solid #333;
+			text-align: center;
+			}
+			.btn-group {margin-bottom: 10px;}            
+			@media only screen and (max-width: 767px) {
+			.btn-group {
+			display: block;
+			}
+			.btn-group .btn {
+			display: block;
+			float: none;
+			width: 100%;
+			}
+			}            
+			.frame {
+			display: block;
+			width: 100vw;
+			height: 100vh;
+			max-width: 100%;
+			margin: 0;
+			padding: 0;
+			border: 0 none;
+			box-sizing: border-box;
+			}
+			div.dataTables_wrapper {
+			width: 1600px;
+			margin: 0 auto;
+			}
+			#lean_overlay {
+			position: fixed;
+			/*position: center;*/
+			z-index:100;
+			top: 0px;
+			left: 0px;
+			height:100%;
+			width:100%;
+			background: #000;
+			display: none;
+			}
+			* {box-sizing: border-box}
+			body {font-family: Verdana, sans-serif; margin:0}
+			.mySlides {display: none; z-index: 9999;}
+			.mySlidesSS {display: none; z-index: 9999;}
+			.mySlidesH {display: none; z-index: 9999;}
+			/*img {vertical-align: middle;}*/
+			/* Slideshow container */
+			.slideshow-container {
+			/*max-width: 1000px;*/
+			max-width: 1100px;
+			position: relative;
+			margin: auto;
+			}
+			/* Next & previous buttons */
+			.prev, .next {
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			width: auto;
+			padding: 16px;
+			margin-top: -22px;
+			/*color: white;*/
+			color: red;
+			font-weight: bold;
+			font-size: 18px;
+			transition: 0.6s ease;
+			border-radius: 0 3px 3px 0;
+			}
+			/* Position the "next button" to the right */
+			.next {
+			right: 0;
+			border-radius: 3px 0 0 3px;
+			}
+			/* On hover, add a black background color with a little bit see-through */
+			.prev:hover, .next:hover {
+			background-color: rgba(0,0,0,0.8);
+			}
+			/* Caption text */
+			.text {
+			/*color: #f2f2f2;*/
+			/*color: #000000;*/
+			color: #ffffff;
+			font-size: 15px;
+			padding: 8px 12px;
+			position: absolute;
+			bottom: 8px;
+			width: 100%;
+			text-align: center;
+			}
+			/* Number text (1/3 etc) */
+			.numbertext {
+			color: #f2f2f2;
+			font-size: 12px;
+			padding: 8px 12px;
+			position: absolute;
+			top: 0;
+			}
+			/* The dots/bullets/indicators */
+			.dot {
+			cursor: pointer;
+			height: 15px;
+			width: 15px;
+			margin: 0 2px;
+			background-color: #bbb;
+			border-radius: 50%;
+			display: inline-block;
+			transition: background-color 0.6s ease;
+			}
+			.active, .dot:hover {
+			background-color: #717171;
+			}
+			/* Fading animation */
+			.fade {
+			-webkit-animation-name: fade;
+			-webkit-animation-duration: 1.5s;
+			animation-name: fade;
+			animation-duration: 1.5s;
+			}
+			@-webkit-keyframes fade {
+			from {opacity: .4} 
+			to {opacity: 1}
+			}
+			@keyframes fade {
+			from {opacity: .4} 
+			to {opacity: 1}
+			}
+			/* On smaller screens, decrease text size */
+			/*@media only screen and (max-width: 300px) {
+			.text {font-size: 11px}
+			}*/
+			/* On smaller screens, decrease text size */
+			@media only screen and (max-width: 300px) {
+			.prev, .next,.text {font-size: 11px}
+			}
+        </style>
+        
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>body { margin: 0px; } .embed-container { position: relative; padding-bottom: 100%; height: 0; overflow: hidden; max-width: 150%; min-height: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 1900px; height: 1000px; }
+		</style>
+		
+		<style>
+		.scrollTop {
+			position: fixed;
+			/*right: 10%;*/
+			right: 15%;
+			/*bottom: 10px;*/
+			bottom: 40px;
+			background-color: #BE3F48;
+			padding: 20px;
+			opacity: 0;
+			transition: all 0.4s ease-in-out 0s;
+		  }
+		  
+		  .scrollTop a {
+			font-size: 18px;
+			color: #fff;
+		  }
+		</style>
+
+		<style>
+			.vNav {
+    			position: fixed;
+    			top: 15%;
+    			/*top: 20%;*/
+    			/*top: 40%;*/
+    			/*top: 50%;*/
+    			/*left: 80%;*/
+    			/*left: 90%;*/
+    			right: 5%;
+    			width: 50px;
+
+    			/*z-index: 9999;*/
+    			z-index: 9998;
+                
+    			list-style-type: none;
+			}
+
+			.vNav ul {
+    			position: relative;
+    			padding: 3px;
+    			padding-left: 35%;
+			}
+
+			.vNav ul li{
+    			position: relative;
+    			/*padding-bottom: 70px;*/
+    			padding-bottom: 5vw;
+    			/*padding-bottom: 8vw;*/
+    			padding-left: 35%;
+    			/*color: rgb(113,135,133);*/
+    			color: rgb(228, 8, 19);
+			}
+
+			.vNav a{
+    			display: block;
+    			width:10px;
+    			height: 10px;
+    			text-indent: -9999px;
+    			/*border-radius: 50%;*/
+    			border-radius: 100%;
+    			border: 2px solid;
+    			/*border-color: rgb(113,135,133);*/
+    			border-color: rgb(228, 8, 19);
+    			text-decoration: none;
+			}
+
+			.vNav a:hover{
+    			border-radius: 50%;
+    			background-color: rgb(113,135,133);
+    			text-decoration: none;
+			}
+
+			.vNav a:hover .label {
+    			display: block;
+			}
+
+			.vNav a.active{
+    			/*border-radius: 50%;*/
+    			border-radius: 100%;
+    			background-color: rgb(207,219,218);
+    			text-decoration: none;
+			}
+
+			.label {
+    			position: relative;
+    			/*top: -60%;*/
+    			top: -1.0vw;
+    			left: -200%;
+    			width: 100%;
+    			text-align: right;
+    			/*font-size: .75em;*/
+    			font-size: 1.0em;
+    			/*color: rgb(113,135,133);*/
+    			color: rgb(0, 0, 0);
+    			/*display: none;*/
+    			display: block;
+			}
+
+			.nav .active .label {
+    			display: block;
+			}
+
+			section { height: 100%; }
+			/*section { height: 400%; }*/
+
+			/*#nav01*/
+            /*pitches {*/
+			#brain {
+    			position: absolute;
+    			top: 0;
+    			left: 0;
+    			height: 100%;
+    			width: 100%;
+			}
+
+			/*#nav02
+			#success {
+    			position: absolute;
+    			top: 100%;
+    			left: 0;
+    			height: 100%;
+    			width: 100%;
+			}*/
+
+			/*#nav03
+			#tutorial {
+    			position: absolute;
+    			top: 200%;
+    			left: 0;
+    			height: 100%;
+    			width: 100%;
+			}*/
+
+			/*#nav04
+			#features {
+    			position: absolute;
+    			top: 300%;
+    			left: 0;
+    			height: 100%;
+    			width: 100%;
+			}*/
+
+			/*#nav05
+			#brain {
+    			position: absolute;
+    			top: 400%;
+    			left: 0;
+    			height: 100%;
+    			width: 100%;
+			}*/
+
+			/*#nav06
+			#history {
+    			position: absolute;
+    			top: 500%;
+    			left: 0;
+    			height: 100%;
+    			width: 100%;
+			}*/
+
+
+			mark { 
+    			background-color: rgb(255,255,51,0.5);
+    			color: black;
+				line-height: 1em;
+			}
+
+/* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+/* Lower Middle text */
+.lower-middle {
+    position: absolute;
+    bottom: 15vh;
+    right: 25%;
+	z-index: 9998;
+}
+
+		</style>
+
+<style>
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	/*background: url(images/loader-64x/Preloader_2.gif) center no-repeat #fff;*/
+	/*background: url(assets/simple-pre-loader/images/loader-64x/Preloader_1.gif) center no-repeat #fff;*/
+	/*background: url("http://mlb.mlb.com/images/3/3/0/292217330/082718_conforto_swing.gif") center no-repeat #fff;*/
+	/*background: url("assets/images//GIF_Quick_Overview_Twitter_HSVR-15PV_rev_A-480p.gif") center no-repeat #fff;*/
+	/*background: url("assets/images//GIF_Quick_Overview_Twitter_HSVR-15PV_rev_A-240p.gif") center no-repeat #fff;*/
+	background: url("assets/images//GIF_Quick_Overview_Twitter_HSVR-15PV_rev_B-240p_122718.gif") center no-repeat #fff;
+
+    
+	
+}
+</style>
+
+<style>
+	img {
+	vertical-align: middle;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+</style>
+
+<style>
+	.test_label {width:25%;float:left;background:red;margin-right:20px}
+	b {text-align:center}
+</style>
+
+
+
+
+<style>
+    div.outer {
+        /*width: 300px; */
+        margin: 0 auto; 
+        /*border: 1px solid red;*/ /* for demo */
+        overflow: visible;
+        /*height: 102px;*/  /* for demo since child is floated */ 
+    }
+    div.inner {
+        position:relative;
+        float: right;
+        right: 50%;
+    }
+    div.inner img {
+        vertical-align: middle;
+        display: block;
+        /*margin-left: auto;
+        margin-right: auto;*/
+        position: relative; 
+        /*right:-50%;*/
+        right:-25%;
+    }
+</style>
+​
+
+
+
+	</head>
+	<body>
+    <!--<body onload = "document.body.style.visibility='visible';" style="visibility:hidden;">-->
+
+        <div class="se-pre-con"></div>
+
+		<!-- START: NAV BAR -->
+		<section class="menu cid-qWiNep5LFm" once="menu" id="menu1-f">
+			<nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm bg-color transparent">
+				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<div class="hamburger">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</button>
+				<div class="menu-logo">
+					<div class="navbar-brand">
+						<span class="navbar-logo">
+						<a href="https://www.cpsportstechnology.com/">
+						<!--<img src="assets/images/cp-sport-technology-200px-96x96.png" alt="Mobirise" title="" style="height: 5rem;">-->
+						</a>
+						</span>
+						<!--<span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4" href="https://www.cpsportstechnology.com" style="font-size:0.8vw;">CP SPORT TECHNOLOGY</a></span>-->
+						<span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4" href="https://bra.in/5p7aJj" style="font-size:1.0vw;">ANDREW F. CARL: PORTFOLIO</a></span>
+					</div>
+				</div>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<div class="navbar-buttons mbr-section-btn">
+						<a class="btn btn-sm btn-secondary display-4" data-toggle="modal" data-target="#youtubeVideo_AI_BoBs" style="font-size:0.6vw;">Intro to My Public Github<br>"AI-Brain-of-Brains"<br></a>
+						<a class="btn btn-sm btn-primary display-4" data-toggle="modal" data-target="#youtubeVideo_BRAIN_1" style="font-size:0.6vw;">Intro to Brain #1<br>"Repos-By-Title":<br></a>
+						<a class="btn btn-sm btn-primary display-4" data-toggle="modal" data-target="#youtubeVideo_BRAIN_2" style="font-size:0.6vw;">Intro to Brain #2<br>"Repos-By-Author":<br></a>
+						<a class="btn btn-sm btn-primary display-4" data-toggle="modal" data-target="#youtubeVideo_BRAIN_3" style="font-size:0.6vw;">Intro to Brain #3<br>"Repos-By-TAGS":<br></a>
+						<a class="btn btn-sm btn-primary display-4" data-toggle="modal" data-target="#youtubeVideo_BRAIN_4" style="font-size:0.6vw;">Intro to Brain #4<br>"Similar-Repos":<br></a>
+						<a class="btn btn-sm btn-primary display-4" data-toggle="modal" data-target="#youtubeVideo_BRAIN_5" style="font-size:0.6vw;">Intro to Brain #5<br>"Similar-Repos-TAGS":<br></a>
+ 				    </div>
+				</div>
+				<ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+					<li class="nav-item">
+						<!--<a class="nav-link link text-black display-4" href="https://cpsportstechnology.com" style="font-size:0.8vw;">About Us</a>-->
+						<a class="nav-link link text-black display-4" href="https://bra.in/5p7aJj" style="font-size:0.8vw;">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link text-black display-4"></a>
+					</li>
+				</ul>
+			</nav>
+		</section>
+        <!-- END: NAV BAR -->
+		
+		
+
+
+	
+	
+	
+			
+
+        
+
+
+
+
+
+
+
+        <!--<iframe width="800" height="600" src="https://app.thebrain.com/embed/666bd904-1b22-4eef-b7eb-b5fe7e8ce68c" frameborder="0"></iframe>-->
+
+
+		<!-- START : FOURTH BACKGROUND SCREEN -->
+		<!--<section class="header8 cid-qWiYh4GXut mbr-fullscreen" id="header8-j">-->
+		<!--<section class="header8 cid-qWiYh4GXut mbr-fullscreen" id="the_brain">-->
+		<section class="header8 cid-qWiYh4GXut mbr-fullscreen" id="brain">
+					<!--<iframe src="https://app.thebrain.com/embed/a509371b-279a-4392-9130-bb7c3d1d7760" style="right:0px; left:0px; bottom:0px;  width:100vw; height:83vh; border: 2px red solid; margin-left:0; padding:0; overflow:hidden;"></iframe>-->
+					<iframe src="https://app.thebrain.com/embed/666bd904-1b22-4eef-b7eb-b5fe7e8ce68c" style="right:0px; left:0px; bottom:0px;  width:100vw; height:83vh; border: 2px red solid; margin-left:0; padding:0; overflow:hidden;"></iframe>
+	        <!--<div class="mbr-arrow hidden-sm-up" aria-hidden="true">-->
+				<!--<a href="#top">-->
+				<!--<a href="#top">
+					<i class="mbri-up mbr-iconfont"></i>
+				</a>
+			</div>-->
+            <!--<div class="mbr-arrow hidden-sm-down" aria-hidden="true">
+                <a href="#next">
+                    <i class="mbri-down mbr-iconfont"></i>
+                </a>
+            </div>-->
+			
+			<!--<div class="bottom-left" style="font-size:1vw;"><b>©CP SPORTS TECHNOLOGY</b></div>
+			
+			<div class="bottom-right" style="font-size:1vw;"><b>"NOT AFFILIATED WITH JUGS®, JUGS SPORTS, or JUGSSPORTS.COM"</b></div>-->
+
+		</section>
+        <!-- END : FOURTH BACKGROUND SCREEN -->
+		
+		
+
+
+
+
+
+
+        
+
+            
+            
+        
+
+
+
+        
+        
+
+
+
+
+
+		<!-- START: NAVBAR VIDEO BUTTONS ON STICKY NAVBAR -->
+        
+		<!-- youtubeVideo_AI_BoBs Modal -->
+		<div class="modal fade" id="youtubeVideo_AI_BoBs" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<!--<h4 class="modal-title" id="myModalLabel">TwoStrikeHitter Feature Overview:</h4>-->
+						<h4 class="modal-title" id="myModalLabel">Intro to My Public Github "AI-Brain-of-Brains"</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<div class="intrinsic-container intrinsic-container-16x9">
+						<iframe src="https://www.youtube.com/embed/aCSP6noa2_M?rel=0&showinfo=0&autohide=1&controls=0&disablekb=1&modestbranding=0&loop=1&list=PLvo8IpqNdsCaP3zkZPZP0Q8Ol4ObmMv1X" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+        </div>
+        
+		<!-- youtubeVideo_BRAIN_1 Modal -->
+		<div class="modal fade" id="youtubeVideo_BRAIN_1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel">Intro to Brain #1 "Repos-By-Title":</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<div class="intrinsic-container intrinsic-container-16x9">
+						<iframe src="https://www.youtube.com/embed/jVd5xPxyeYA?rel=0&showinfo=0&autohide=1&controls=0&disablekb=1&modestbranding=0&loop=1&list=PLvo8IpqNdsCbjkdS3DCy_Lhge2ca-ESCI" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+        </div>
+        
+		<!-- youtubeVideo_BRAIN_2 Modal -->
+		<div class="modal fade" id="youtubeVideo_BRAIN_2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel">Intro to Brain #2 "Repos-By-Author":</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<div class="intrinsic-container intrinsic-container-16x9">
+						<iframe src="https://www.youtube.com/embed/yxWlqWwlms8?rel=0&showinfo=0&autohide=1&controls=0&disablekb=1&modestbranding=0&loop=1&list=PLvo8IpqNdsCY8yWPSu8Wa9Fy5V3aY07vr" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+        </div>
+        
+		<!-- youtubeVideo_BRAIN_3 Modal -->
+		<div class="modal fade" id="youtubeVideo_BRAIN_3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel">Intro to Brain #3 "Repos-By-TAGS":</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<div class="intrinsic-container intrinsic-container-16x9">
+						<iframe src="https://www.youtube.com/embed/Tldj3fW8yrE?rel=0&showinfo=0&autohide=1&controls=0&disablekb=1&modestbranding=0&loop=1&list=PLvo8IpqNdsCaB0EnQ72-WIl0pWR3oCGzh" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+        </div>
+        
+		<!-- youtubeVideo_BRAIN_4 Modal -->
+		<div class="modal fade" id="youtubeVideo_BRAIN_4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel">Intro to Brain #4 "Most-Similar-Repos":</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<div class="intrinsic-container intrinsic-container-16x9">
+						<iframe src="https://www.youtube.com/embed/FWYPav2pK2g?rel=0&showinfo=0&autohide=1&controls=0&disablekb=1&modestbranding=0&loop=1&list=PLvo8IpqNdsCYrjgaUFI0V5m2OGQHfMG3s" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+        </div>
+        
+		<!-- youtubeVideo_BRAIN_5 Modal -->
+		<div class="modal fade" id="youtubeVideo_BRAIN_5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel">Intro to Brain #5 "Most-Similar-Repos-TAGS":</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<div class="intrinsic-container intrinsic-container-16x9">
+						<iframe src="https://www.youtube.com/embed/7KiTZgHX3kU?rel=0&showinfo=0&autohide=1&controls=0&disablekb=1&modestbranding=0&loop=1&list=PLvo8IpqNdsCYSI2zXRC1StH9-w7bsM5wr" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+        </div>
+
+		<!-- END: NAVBAR VIDEO BUTTONS ON STICKY NAVBAR -->
+
+
+
+
+
+
+
+
+
+		
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+		<footer></footer>
+		<div id="stop" class="scrollTop">
+		  <span><a href="">Top</a></span>
+		</div>
+			  
+
+		<script src="assets/web/assets/jquery/jquery.min.js"></script>
+		<script src="assets/popper/popper.min.js"></script>
+		<script src="assets/tether/tether.min.js"></script>
+		<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+		<script src="assets/smoothscroll/smooth-scroll.js"></script>
+		<script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+		<script src="assets/ytplayer/jquery.mb.ytplayer.min.js"></script>
+		<script src="assets/vimeoplayer/jquery.mb.vimeo_player.js"></script>
+		<script src="assets/playervimeo/vimeo_player.js"></script>
+		<script src="assets/dropdown/js/script.min.js"></script>
+		<script src="assets/theme/js/script.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+
+        <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>-->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+        <script>
+			$('.modal-iframe-youtube').click(function (e) {
+			e.preventDefault();
+			var sitetypeHref = $(this).attr('href');
+			var sitetypeHrefAuto = sitetypeHref + "?autoplay=1"
+			//sitetypeHref = sitetypeHref.replace('watch?v=', 'v/');
+			$('#modal-window-iframe-youtube').on('shown.bs.modal', function () {
+			    var iFrame = $(this).find("iframe");
+			    iFrame.attr("src", sitetypeHrefAuto);
+			});
+			$("#modal-window-iframe-youtube").on('hidden.bs.modal', function () {
+			    var iFrame = $(this).find("iframe");
+			    iFrame.attr("src", sitetypeHref);
+			});
+			$('#modal-window-iframe-youtube').modal({ show: true });
+			});        
+        </script>
+        
+		<script>
+			$(document).ready(function() {
+		
+				$('#youtubeVideo_DEMO').on('hidden.bs.modal', function() {
+			    var $this = $(this).find('iframe'),
+			      tempSrc = $this.attr('src');
+			    $this.attr('src', "");
+			    $this.attr('src', tempSrc);
+			  });
+			
+
+
+				//		<!-- START: NAVBAR VIDEO BUTTONS ON STICKY NAVBAR -->
+		
+				$('#youtubeVideo_FEATURE_OVERVIEW').on('hidden.bs.modal', function() {
+			    var $this = $(this).find('iframe'),
+			      tempSrc = $this.attr('src');
+			    $this.attr('src', "");
+			    $this.attr('src', tempSrc);
+			  });
+			
+			  $('#youtubeVideo_JUGS_CURVEBALL').on('hidden.bs.modal', function() {
+			    var $this = $(this).find('iframe'),
+			      tempSrc = $this.attr('src');
+			    $this.attr('src', "");
+			    $this.attr('src', tempSrc);
+			  });
+			
+			  $('#youtubeVideo_JUGS_101').on('hidden.bs.modal', function() {
+			    var $this = $(this).find('iframe'),
+			      tempSrc = $this.attr('src');
+			    $this.attr('src', "");
+			    $this.attr('src', tempSrc);
+			  });
+			
+			  $('#youtubeVideo_JUGS_COMBO').on('hidden.bs.modal', function() {
+			    var $this = $(this).find('iframe'),
+			      tempSrc = $this.attr('src');
+			    $this.attr('src', "");
+			    $this.attr('src', tempSrc);
+			  });
+			
+			  $('#youtubeVideo_JUGS_BP2').on('hidden.bs.modal', function() {
+			    var $this = $(this).find('iframe'),
+			      tempSrc = $this.attr('src');
+			    $this.attr('src', "");
+			    $this.attr('src', tempSrc);
+			  });
+			
+			  $('#youtubeVideo_JUGS_BP3').on('hidden.bs.modal', function() {
+			    var $this = $(this).find('iframe'),
+			      tempSrc = $this.attr('src');
+			    $this.attr('src', "");
+			    $this.attr('src', tempSrc);
+			  });
+
+				//		<!-- END: NAVBAR VIDEO BUTTONS ON STICKY NAVBAR -->
+			
+
+
+
+			
+			
+			  /*$('#youtubeVideo_BRAIN').on('hidden.bs.modal', function() {
+			    var $this = $(this).find('iframe'),
+			      tempSrc = $this.attr('src');
+			    $this.attr('src', "");
+			    $this.attr('src', tempSrc);
+			  });*/
+			
+			  /*$('#html5Video').on('hidden.bs.modal', function() {
+			    var html5Video = document.getElementById("htmlVideo");
+			    if (html5Video != null) {
+			      html5Video.pause();
+			      html5Video.currentTime = 0;
+			    }
+			  });*/
+
+			});		
+			     
+        </script>
+        
+		<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+			                
+			function plusSlides(n) {
+			    showSlides(slideIndex += n);
+			}
+			                
+			function currentSlide(n) {
+			    showSlides(slideIndex = n);
+			}
+			                
+			function showSlides(n) {
+			    var i;
+			    var slides = document.getElementsByClassName("mySlides");
+			    var dots = document.getElementsByClassName("dot");
+			    if (n > slides.length) {slideIndex = 1}    
+			    if (n < 1) {slideIndex = slides.length}
+			    for (i = 0; i < slides.length; i++) {
+			        slides[i].style.display = "none";  
+			    }
+			    for (i = 0; i < dots.length; i++) {
+			        dots[i].className = dots[i].className.replace(" active", "");
+			    }
+			    slides[slideIndex-1].style.display = "block";  
+			    dots[slideIndex-1].className += " active";
+			}
+
+
+
+			var slideIndexSS = 1;
+			showSlidesSS(slideIndexSS);
+			                
+			function plusSlidesSS(n) {
+			    showSlidesSS(slideIndexSS += n);
+			}
+			                
+			function currentSlideSS(n) {
+			    showSlidesSS(slideIndexSS = n);
+			}
+			                
+			function showSlidesSS(n) {
+			    var i;
+			    var slides = document.getElementsByClassName("mySlidesSS");
+			    var dots = document.getElementsByClassName("dot");
+			    if (n > slides.length) {slideIndexSS = 1}    
+			    if (n < 1) {slideIndexSS = slides.length}
+			    for (i = 0; i < slides.length; i++) {
+			        slides[i].style.display = "none";  
+			    }
+			    for (i = 0; i < dots.length; i++) {
+			        dots[i].className = dots[i].className.replace(" active", "");
+			    }
+			    slides[slideIndexSS-1].style.display = "block";  
+			    dots[slideIndexSS-1].className += " active";
+			}
+
+
+
+			var slideIndexH = 1;
+			showSlidesH(slideIndexH);
+			                
+			function plusSlidesH(n) {
+			    showSlidesH(slideIndexH += n);
+			}
+			                
+			function currentSlideH(n) {
+			    showSlidesH(slideIndexH = n);
+			}
+			                
+			function showSlidesH(n) {
+			    var i;
+			    var slides = document.getElementsByClassName("mySlidesH");
+			    var dots = document.getElementsByClassName("dot");
+			    if (n > slides.length) {slideIndexH = 1}    
+			    if (n < 1) {slideIndexH = slides.length}
+			    for (i = 0; i < slides.length; i++) {
+			        slides[i].style.display = "none";  
+			    }
+			    for (i = 0; i < dots.length; i++) {
+			        dots[i].className = dots[i].className.replace(" active", "");
+			    }
+			    slides[slideIndexH-1].style.display = "block";  
+			    dots[slideIndexH-1].className += " active";
+			}
+
+
+
+        </script>
+
+
+
+<script>
+
+$(document).ready(function() {
+	/******************************
+		BOTTOM SCROLL TOP BUTTON
+	 ******************************/
+  
+	// declare variable
+	var scrollTop = $(".scrollTop");
+  
+	$(window).scroll(function() {
+	  // declare variable
+	  var topPos = $(this).scrollTop();
+  
+	  // if user scrolls down - show scroll to top button
+	  if (topPos > 100) {
+		$(scrollTop).css("opacity", "1");
+  
+	  } else {
+		$(scrollTop).css("opacity", "0");
+	  }
+  
+	}); // scroll END
+  
+	//Click event to scroll to top
+	$(scrollTop).click(function() {
+	  $('html, body').animate({
+		scrollTop: 0
+	  }, 800);
+	  return false;
+  
+	}); // click() scroll top EMD
+  
+  }); // ready() END
+</script>
+
+
+
+        <script>
+            //$(window).load(function(){$('html, body').animate({scrollTop:0}, 'slow');});
+            //$(window).load(function(){$('html, body').animate({scrollTop:0}, 'slow');});
+            //$(window).load(function(){$('html, body').animate({scrollTop:0},10000);});
+            $(window).load(function(){$('html, body').animate({scrollTop:0},1);});
+        </script>
+
+
+		<script>
+			$(document).ready(function($){
+				$('a').click(function(){
+					$('html, body').animate({
+						scrollTop: $( $.attr(this, 'href') ).offset().top
+					}, 500);
+					return false;
+				});
+	
+				$('.vNav ul li a').click(function () {
+					$('.vNav ul li a').removeClass('active');
+					$(this).addClass('active');
+				}); 
+	
+   				$('.vNav a').hover(function() {
+		   			$(this).find('.label').show();
+	   			}, function() {
+					//$(this).find('.label').hide();
+					$(this).find('.label').show();
+   				});
+
+			});
+		</script>
+
+		<script>
+			$('.slider').slick({
+				/*vertical: true,*/
+				autoplay: true,
+				autoplaySpeed: 5000,
+				speed: 300,
+				arrows: true,
+
+
+  // normal options...
+  //infinite: false,
+
+  // the magic
+  responsive: [{
+
+      breakpoint: 1024,
+      settings: {
+		autoplay: true,
+		autoplaySpeed: 5000,
+		speed: 300,
+		arrows: true,
+      }
+
+    }, {
+
+      breakpoint: 600,
+      settings: {
+		autoplay: true,
+		autoplaySpeed: 5000,
+		speed: 300,
+		arrows: false,
+      }
+
+    }, {
+
+      breakpoint: 300,
+      //settings: "unslick" // destroys slick
+
+    }]
+
+			});
+
+
+
+//paste this code under the head tag or in a separate js file.
+	// Wait for window load
+	$(window).load(function() {
+		// Animate loader off screen
+		//$(".se-pre-con").fadeOut("slow");;
+		$(".se-pre-con").fadeOut(3000);
+	});
+
+
+		</script>
+
+	</body>
+</html>
